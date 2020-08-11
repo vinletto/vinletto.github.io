@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0;
+    background-color: white;
+}
+
+div {
+    display: block;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content-banner {
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#banner h1 {
+    color: white;
+    font-size: 45px;
+    font-family: Chivo;
+}
+
+.container {
+    width: 1100px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.card-white {
+    background: white;
+    box-shadow: 0 0 16px rgba(0, 0, 1, 0.26);
+    border-radius: 5px;
+    padding: 24px;
+    margin: 8px;
+    flex-grow: 1;
+}
+
+.card-white:hover {
+    transform: scale(1.05);;
+}
+
+a.card-white,
+a.card-white:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-white img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#footer {
+    background-color: #404040;
+    color: white;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+#typewriter {
+    max-width: 100%;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+/* responsivity */
+@media screen and (min-width: 300px) {
+    .container {
+        width: 400px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        width: 600px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: 900px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+

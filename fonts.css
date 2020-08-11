@@ -1,0 +1,45 @@
+/* Write some CSS below */
+h1 {
+    color: white;
+    font-size: 45px;
+    font-family: Chivo;
+    margin: 0;
+}
+
+h2 {
+    color: grey;
+    font-size: 24px;
+    font-family: Chivo;
+    opacity: 0.8;
+}
+
+h3 {
+    color: crimson;
+    font-size: 28px;
+    font-family: Chivo;
+    text-align: center;
+}
+
+p {
+    font-family: Overpass;
+    font-size: 18px;
+    color: grey;
+}
+
+.btn-blue {
+    text-decoration: none;
+    display: inline-block;
+    font-family: Chivo;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: crimson;
+    padding: 15px 40px;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.btn-blue:hover {
+    background-color: rgb(238, 51, 88);
+    color: white;
+}
