@@ -78,20 +78,13 @@ a.card-white:hover {
     text-align: center;
 }
 
-#typewriter {
+.writer {
     max-width: 100%;
-    overflow: hidden;
     border-right: .15em solid orange;
     margin: 0 auto;
-    letter-spacing: .15em;
-    animation: 
-      typing 3.5s steps(40, end),
+    letter-spacing: .10em;
+    animation:
       blink-caret .75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
   }
 
   @keyframes blink-caret {
@@ -122,7 +115,7 @@ a.card-white:hover {
 
 @media screen and (min-width: 1000px) {
     .container {
-        width: 900px;
+        width: 950px;
     }
 
     .cards {
